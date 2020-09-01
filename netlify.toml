@@ -1,6 +1,7 @@
-# Settings in the [build] context are global and are applied to all contexts
-# unless otherwise overridden by more specific contexts.
 [build]
-
-  # Default build command.
   command = "grunt create-index && hugo"
+	publish = "public"
+[context.production.environment]
+	HUGO_VERSION = "0.74.3"
+	HUGO_ENV = "production"
+	HUGO_ENABLEGITINFO = "true"
