@@ -1,5 +1,5 @@
 theme = "hugo-sugoi"
-baseURL = ""
+baseURL = "/"
 languageCode = "he"
 direction = "rtl"
 title = "מרכז הדרכה"
