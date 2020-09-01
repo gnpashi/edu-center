@@ -1,5 +1,5 @@
 theme = "hugo-sugoi"
-baseURL = "https://example.com"
+baseURL = ""
 languageCode = "he"
 direction = "rtl"
 title = "מרכז הדרכה"
