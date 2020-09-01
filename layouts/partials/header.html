@@ -1,0 +1,17 @@
+<nav>
+    <label for="drop" class="toggle"><i class="fas fa-bars u-pull-right" aria-hidden="true"></i> <span><i
+                class="fas fa-fire" aria-hidden="true"></i>
+            Sugoi</span></label>
+    <input type="checkbox" id="drop" />
+    <ul class="menu">
+        {{ range .Site.Menus.nav }}
+        <li class="u-pull-left">
+            <a href="{{ .URL | absLangURL }}" class="Members">
+                <span>{{ .Pre }} {{ .Name }}</span>
+            </a>
+        </li>
+        {{ end }}
+				<li class="u-pull-right"><a href="{{ .Site.BaseURL }}"><span><i class="fas fa-fire u-pull-left" aria-hidden="true"></i>
+					Sugoi</span></a></li>
+    </ul>
+</nav>
