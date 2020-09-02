@@ -11,8 +11,8 @@
 <div class="section">
   <div class="container">
     <div class="row">
-      {{ $paginator := .Paginate .Pages  }}
-      {{ range $paginator.Pages }}
+      <!-- {{ $paginator := .Paginate .Pages  }} -->
+      {{ range .Pages }}
       <div class="row">
         <div class="nine columns"> <i class="far fa-calendar"></i> {{.Date.Format "2006-01-02"}}</div>
         <div class="three columns"> <i class="far fa-clock"></i> Reading Time: {{ .ReadingTime }}
