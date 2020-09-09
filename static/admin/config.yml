@@ -28,12 +28,15 @@ collections:
                 - {label: שם, name: name, widget: string, default: "Emmet"}
                 - {label: תמונה, name: avatar, widget: image, default: "/img/emmet.jpg"}
 
-collection:
-  - name: "index" # Used in routes, e.g., /admin/collections/blog
-    label: "ראשי" # Used in the UI
-    folder: "content" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-        - {label: "כותרת", name: "title", widget: "string"}
-        - {label: "קטגוריות", name: "categories", widget: "list"}
+collections:
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "About Page"
+        name: "about"
+        file: "content/about.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
+          
+      
