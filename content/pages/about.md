@@ -1,7 +1,7 @@
 ---
-title: "About"
+title: About
 date: 2020-04-23T19:57:09+05:30
-text: ""
+text: lorem ipsum
 draft: false
 ---
 
