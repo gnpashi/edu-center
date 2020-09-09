@@ -7,23 +7,23 @@ media_folder: "/static/images/uploads"
 
 collections:
   - name: "post" # Used in routes, e.g., /admin/collections/blog
-    label: "Post" # Used in the UI
+    label: "פעולות" # Used in the UI
     folder: "content/post" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-        - {label: "Title", name: "title", widget: "string"}
-        - {label: "Categories", name: "categories", widget: "list"}
-        - {label: "Body", name: "body", widget: "markdown"}
-        - label: "Testimonials"
+        - {label: "כותרת", name: "title", widget: "string"}
+        - {label: "קטגוריות", name: "categories", widget: "list"}
+        - {label: "גוף הפעולה", name: "body", widget: "markdown"}
+        - label: "טסטמוניאלים"
           name: "testimonials"
           widget: "list"
           summary: '{{fields.quote}} - {{fields.author.name}}'
           fields:
-            - {label: Quote, name: quote, widget: string, default: "Everything is awesome!"}
-            - label: Author
+            - {label: ציטוט, name: quote, widget: string, default: "Everything is awesome!"}
+            - label: מחבר
               name: author
               widget: object
               fields:
-                - {label: Name, name: name, widget: string, default: "Emmet"}
-                - {label: Avatar, name: avatar, widget: image, default: "/img/emmet.jpg"}
+                - {label: שם, name: name, widget: string, default: "Emmet"}
+                - {label: תמונה, name: avatar, widget: image, default: "/img/emmet.jpg"}
