@@ -1,4 +1,0 @@
----
-title: gvsdfsf
-text: fdsfdfdsffdsfdsdfsdsffds
----
