@@ -27,8 +27,6 @@ collections:
               fields:
                 - {label: שם, name: name, widget: string, default: "Emmet"}
                 - {label: תמונה, name: avatar, widget: image, default: "/img/emmet.jpg"}
-
-collections:
   - label: "Pages"
     name: "pages"
     files:
